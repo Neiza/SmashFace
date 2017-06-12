@@ -1,9 +1,10 @@
 "use strict"
 const gameContainer = () => {
   const gameCont = $(".game-container");
-  gameCont.append(Header());
-  gameCont.append(Sede());
-  gameCont.append(ClassmateName());
+  gameCont.prepend(ClassmateName());
+  gameCont.prepend(Sede());
+  gameCont.prepend(Header());
+
 }
 
 const render = (root) => {
